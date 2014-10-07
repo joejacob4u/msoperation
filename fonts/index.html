@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MSoperation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+	<!--link rel="stylesheet/less" href="less/bootstrap.less" type="text/css" /-->
+	<!--link rel="stylesheet/less" href="less/responsive.less" type="text/css" /-->
+	<!--script src="js/less-1.3.3.min.js"></script-->
+	<!--append ‘#!watch’ to the browser URL, then refresh the page. -->
+	
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+  <![endif]-->
+
+  <!-- Fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
+  <link rel="shortcut icon" href="img/favicon.png">
+  
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	 <script src="./jquery-1.9.1.min.js"></script>
+    <script>
+       /* $(function () {
+            $('form#form2').on('submit', function(e) {
+	      var name=$('#Name').val();
+	      
+                $.ajax({
+                    type: 'post',
+                    url: 'test.php',
+                    data: 
+                    success: function () {
+                        alert('MUST ALERT TO DETERMINE SUCCESS PAGE');
+                    }
+                });
+                e.preventDefault();
+            });
+        }); */    
+    </script>
+</head>
+
+<body>
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="navbar-header">
+					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="#">MSoperation</a>
+				</div>
+				
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="Event2.php">Follow Up</a>
+						</li>
+						<li>
+							<a href="Event3.php">Resources</a>
+						</li>
+						
+					</ul>
+					<form class="navbar-form navbar-left" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control">
+						</div> <button type="submit" class="btn btn-default">Search System</button>
+					</form>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="logout.php">Logout</a>
+						</li>
+						<li class="dropdown" id="menu1">
+             <a class="dropdown-toggle" data-toggle="dropdown" href="#menu1" id="menu1" value="Login">
+               
+               Login
+                <b class="caret"></b>
+             </a>
+             <div class="dropdown-menu">
+               <form style="margin: 0px" accept-charset="UTF-8" action="login.php" method="POST"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="4L/A2ZMYkhTD3IiNDMTuB/fhPRvyCNGEsaZocUUpw40=" /></div>
+                 <fieldset class='textbox' style="padding:15px">
+                   <input style="margin-top: 8px" type="text" placeholder="Username" name="user" />
+                   <input style="margin-top: 8px" type="password" placeholder="Password" name="pass" />
+                   <input class="btn-primary" name="commit" type="submit" value="Log In" />
+                 </fieldset>
+               </form>
+             </div>
+           </li>
+ 					</ul>
+				</div>
+				
+			</nav>
+			<div class="jumbotron">
+				<h1>
+					MSoperation App
+				</h1>
+				<p>
+					
+	<form id ="form2" class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Moving Referral</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Name">Name</label>  
+  <div class="col-md-4">
+  <input id="Name" name="Name" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="phone">Phone</label>  
+  <div class="col-md-4">
+  <input id="phone" name="phone" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="email">Email</label>  
+  <div class="col-md-4">
+  <input id="email" name="email" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="phone">Referred by Name </label>  
+  <div class="col-md-4">
+  <input id="name2" name="name2" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="phone">Referred by Phone</label>  
+  <div class="col-md-4">
+  <input id="phone2" name="phone2" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="phone">Referred by Email</label>  
+  <div class="col-md-4">
+  <input id="email2" name="email2" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textarea">Notes</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" id="textarea" name="textarea"></textarea>
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="singlebutton"></label>
+  <div class="col-md-4">
+    <button type="submit" id="singlebutton" name="submit" class="btn btn-primary">Send</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+
+
+				
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
